@@ -25,7 +25,7 @@ namespace Person
                                  this.Name,
                                  this.Age));
 
-            return stringBuilder.ToString();//override
+            return stringBuilder.ToString();
         }
     }
 }
