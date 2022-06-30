@@ -27,6 +27,5 @@ namespace Person
 
             return stringBuilder.ToString();
         }
-
     }
 }
