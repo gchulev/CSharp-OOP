@@ -11,9 +11,9 @@ namespace Animals
 
         }
 
-        public override void ProduceSound()
+        public override string ProduceSound()
         {
-            Console.WriteLine("MEOW");
+            return "MEOW";
         }
     }
 }

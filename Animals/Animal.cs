@@ -64,7 +64,7 @@ namespace Animals
             }
         }
 
-        public abstract void ProduceSound();
+        public abstract string ProduceSound();
 
     }
 }

@@ -73,7 +73,7 @@ namespace Animals
             {
                 Console.WriteLine(animal.GetType().Name);
                 Console.WriteLine($"{animal.Name} {animal.Age} {animal.Gender}");
-                animal.ProduceSound();
+                Console.WriteLine(animal.ProduceSound()); 
             }
         }
     }

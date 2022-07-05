@@ -4,16 +4,16 @@ using System.Text;
 
 namespace Animals
 {
-    internal class Dog : Animal
+    public class Dog : Animal
     {
         public Dog(string name, int age, string gender) : base(name, age, gender)
         {
             
         }
 
-        public override void ProduceSound()
+        public override string ProduceSound()
         {
-            Console.WriteLine("Woof!");
+            return "Woof!";
         }
 
     }
