@@ -9,6 +9,7 @@ namespace Animals
         private string _name;
         private int _age;
         private string _gender;
+
         protected Animal(string name, int age, string gender)
         {
             this.Name = name;
