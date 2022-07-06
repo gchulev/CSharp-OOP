@@ -6,7 +6,7 @@
         private const int MinAge = 0;
         private const int MaxAge = 15;
 
-        private protected string name;
+        private string name;
         private int age;
 
         internal Chicken(string name, int age)
@@ -26,7 +26,7 @@
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException($"Name cannot be empty.", nameof(this.Name));
+                    throw new ArgumentException($"Name cannot be empty.");
                 }
                 this.name = value;
             }
@@ -41,9 +41,9 @@
 
             private set
             {
-                if (value > MinAge && value < MaxAge)
+                if (value <= MinAge || value >= MaxAge)
                 {
-                    throw new ArgumentException("Age should be between 0 and 15.", nameof(this.Age));
+                    throw new ArgumentException("Age should be between 0 and 15.");
                 }
                 this.age = value;
             }
