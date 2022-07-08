@@ -10,7 +10,6 @@ namespace ShoppingSpree
     {
         private string _name;
         private decimal _money;
-        private List<Product> _bag;
         public Person(string name, decimal money)
         {
             this.Name = name;
