@@ -9,6 +9,7 @@ namespace BorderControl
         static void Main()
         {
             var entitiesCollection = new List<IIdentifiable>();
+
             while (true)
             {
                 string command = Console.ReadLine();
