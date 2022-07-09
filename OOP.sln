@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaCalories", "PizzaCalor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefineanInterfaceIPerson", "DefineanInterfaceIPerson\DefineanInterfaceIPerson.csproj", "{1AE1E6F1-B2CF-4EBF-9FDE-4A5DA91D1240}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultipleImplementation", "MultipleImplementation\MultipleImplementation.csproj", "{222FB2CD-B863-4187-BE6A-95F54AECEFF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{1AE1E6F1-B2CF-4EBF-9FDE-4A5DA91D1240}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AE1E6F1-B2CF-4EBF-9FDE-4A5DA91D1240}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AE1E6F1-B2CF-4EBF-9FDE-4A5DA91D1240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{222FB2CD-B863-4187-BE6A-95F54AECEFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{222FB2CD-B863-4187-BE6A-95F54AECEFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{222FB2CD-B863-4187-BE6A-95F54AECEFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{222FB2CD-B863-4187-BE6A-95F54AECEFF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
