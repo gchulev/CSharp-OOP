@@ -115,7 +115,9 @@ namespace MilitaryElite
                     soldiers.Add(spy);
                 }
             }
-
+            Console.WriteLine();
+            Console.WriteLine("--------DEBUG------------");
+            Console.WriteLine();
             foreach (var soldier in soldiers)
             {
                 Console.WriteLine(soldier.ToString());
