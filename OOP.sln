@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilitaryElite", "MilitaryEl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionHierarchy", "CollectionHierarchy\CollectionHierarchy.csproj", "{ACA76553-FDFF-4142-92C3-DE8D5E30AFB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicles", "Vehicles\Vehicles.csproj", "{8592BB4B-DB60-454D-B6DF-691BDA6B2DA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{ACA76553-FDFF-4142-92C3-DE8D5E30AFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACA76553-FDFF-4142-92C3-DE8D5E30AFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACA76553-FDFF-4142-92C3-DE8D5E30AFB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8592BB4B-DB60-454D-B6DF-691BDA6B2DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8592BB4B-DB60-454D-B6DF-691BDA6B2DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8592BB4B-DB60-454D-B6DF-691BDA6B2DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8592BB4B-DB60-454D-B6DF-691BDA6B2DA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
