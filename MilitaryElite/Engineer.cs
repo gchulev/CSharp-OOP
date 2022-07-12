@@ -23,7 +23,11 @@ namespace MilitaryElite
 
         public override string ToString()
         {
-            return $"Name: {this.FirstName} {this.LastName} Id: {this.Id} Salary: {this.Salary}{Environment.NewLine}Corps: {this.Corps}{Environment.NewLine}Repairs:{Environment.NewLine}{string.Join(Environment.NewLine, this.Repairs)}";
+            if (this.Repairs.Count == 0)
+            {
+                return $"Name: {this.FirstName} {this.LastName} Id: {this.Id} Salary: {this.Salary:f2}{Environment.NewLine}Corps: {this.Corps}{Environment.NewLine}Repairs:";
+            }
+            return $"Name: {this.FirstName} {this.LastName} Id: {this.Id} Salary: {this.Salary:f2}{Environment.NewLine}Corps: {this.Corps}{Environment.NewLine}Repairs:{Environment.NewLine}{string.Join(Environment.NewLine, this.Repairs)}";
 
         }
     }

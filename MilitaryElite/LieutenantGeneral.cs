@@ -24,6 +24,10 @@ namespace MilitaryElite
         }
         public override string ToString()
         {
+            if (Privates.Count == 0)
+            {
+                return $"Name: {this.FirstName} {this.LastName} Id: {this.Id} Salary: {this.Salary:f2}{Environment.NewLine}Privates:";
+            }
             return $"Name: {this.FirstName} {this.LastName} Id: {this.Id} Salary: {this.Salary:f2}{Environment.NewLine}Privates:{Environment.NewLine}  {string.Join($"{Environment.NewLine}  ", this.Privates)}";
         }
     }
