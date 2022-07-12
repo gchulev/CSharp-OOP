@@ -35,20 +35,6 @@ namespace Vehicles
                 this._fuelConsumption = value + 1.6;
             }
         }
-
-        public override void Drive(double distance)
-        {
-            if (distance * this._fuelConsumption <= this._fuelQuantity)
-            {
-                this._fuelQuantity -= distance * this._fuelConsumption;
-                Console.WriteLine($"Truck travelled {distance} km");
-            }
-            else
-            {
-                Console.WriteLine($"Truck needs refueling");
-            }
-        }
-
         public override void Refuel(double fuelAmmount)
         {
             double fuelToAdd = fuelAmmount * 0.95;

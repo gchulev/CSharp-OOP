@@ -15,7 +15,7 @@ namespace Vehicles
             double carFuelQuantity = double.Parse(carInput[1]);
             double carFuelConsumption = double.Parse(carInput[2]);
             var car = new Car(carFuelQuantity, carFuelConsumption);
-
+            
             double truckFuelquantity = double.Parse(truckInput[1]);
             double truckFuelConsumption = double.Parse(truckInput[2]);
             var truck = new Truck(truckFuelquantity, truckFuelConsumption);

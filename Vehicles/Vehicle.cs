@@ -6,17 +6,43 @@ namespace Vehicles
 {
     public abstract class Vehicle
     {
+        private double _fuelQuantity;
+        private double _fuelConsumption;
         public Vehicle(double fuelQantity, double fuelConsumption)
         {
             this.FuelQuantity = fuelQantity;
             this.FuelConsumption = fuelConsumption;
         }
 
-        public abstract double FuelQuantity { get; protected set; }
-        public abstract double FuelConsumption { get; protected set; }
+        public virtual double FuelQuantity
+        {
+            get
+            {
+                return this._fuelQuantity;
+            }
+            protected set
+            {
+                this._fuelQuantity = value;
+            }
+        }
+        public virtual double FuelConsumption { get; protected set; }
 
-        public abstract void Drive(double distance);
-        public abstract void Refuel(double fuelAmmount);
+        public void Drive(double distance)
+        {
+            if (distance * this.FuelConsumption <= this.FuelQuantity)
+            {
+                this.FuelQuantity -= distance * this.FuelConsumption;
+                Console.WriteLine($"{this.GetType().Name} travelled {distance} km");
+            }
+            else
+            {
+                Console.WriteLine($"{this.GetType().Name} needs refueling");
+            }
+        }
+        public virtual void Refuel(double fuelAmmount)
+        {
+            this.FuelQuantity += fuelAmmount;
+        }
 
     }
 }
