@@ -15,31 +15,33 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant", "Restaurant\Re
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Animals", "Animals\Animals.csproj", "{E9FB2DF0-6355-483F-B715-E5AA5D1BEC77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassBoxData", "ClassBoxData\ClassBoxData.csproj", "{A1F41FAF-5D68-4BDF-8A98-055A996FBF04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassBoxData", "ClassBoxData\ClassBoxData.csproj", "{A1F41FAF-5D68-4BDF-8A98-055A996FBF04}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalFarm", "AnimalFarm\AnimalFarm.csproj", "{0C9C0201-D533-4DDF-A4EA-D600BA509580}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingSpree", "ShoppingSpree\ShoppingSpree.csproj", "{B3632E2E-6D21-4FEA-BD89-B6BBB42931CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingSpree", "ShoppingSpree\ShoppingSpree.csproj", "{B3632E2E-6D21-4FEA-BD89-B6BBB42931CD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaCalories", "PizzaCalories\PizzaCalories.csproj", "{61116AA8-541F-488C-AA48-B09DDD1B5337}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefineanInterfaceIPerson", "DefineanInterfaceIPerson\DefineanInterfaceIPerson.csproj", "{1AE1E6F1-B2CF-4EBF-9FDE-4A5DA91D1240}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefineanInterfaceIPerson", "DefineanInterfaceIPerson\DefineanInterfaceIPerson.csproj", "{1AE1E6F1-B2CF-4EBF-9FDE-4A5DA91D1240}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultipleImplementation", "MultipleImplementation\MultipleImplementation.csproj", "{222FB2CD-B863-4187-BE6A-95F54AECEFF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telephony", "Telephony\Telephony.csproj", "{EE665B11-FA5C-46F3-898B-3FCAB6EFFED7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telephony", "Telephony\Telephony.csproj", "{EE665B11-FA5C-46F3-898B-3FCAB6EFFED7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BorderControl", "BorderControl\BorderControl.csproj", "{3207113B-66A5-4BB1-9218-02906EC959C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BorderControl", "BorderControl\BorderControl.csproj", "{3207113B-66A5-4BB1-9218-02906EC959C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthdayCelebrations", "BirthdayCelebrations\BirthdayCelebrations.csproj", "{02D62E01-75A4-45E7-ABA3-70B56B494B9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayCelebrations", "BirthdayCelebrations\BirthdayCelebrations.csproj", "{02D62E01-75A4-45E7-ABA3-70B56B494B9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodShortage", "FoodShortage\FoodShortage.csproj", "{8AEF8478-CA45-4971-833A-4164079D1C2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodShortage", "FoodShortage\FoodShortage.csproj", "{8AEF8478-CA45-4971-833A-4164079D1C2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilitaryElite", "MilitaryElite\MilitaryElite.csproj", "{5CB62DB3-77CA-4D8F-A820-49701E629854}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilitaryElite", "MilitaryElite\MilitaryElite.csproj", "{5CB62DB3-77CA-4D8F-A820-49701E629854}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionHierarchy", "CollectionHierarchy\CollectionHierarchy.csproj", "{ACA76553-FDFF-4142-92C3-DE8D5E30AFB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionHierarchy", "CollectionHierarchy\CollectionHierarchy.csproj", "{ACA76553-FDFF-4142-92C3-DE8D5E30AFB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicles", "Vehicles\Vehicles.csproj", "{8592BB4B-DB60-454D-B6DF-691BDA6B2DA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vehicles", "Vehicles\Vehicles.csproj", "{8592BB4B-DB60-454D-B6DF-691BDA6B2DA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raiding", "Raiding\Raiding.csproj", "{CC09D613-C9B1-4EA3-B4DE-4E730E386710}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{8592BB4B-DB60-454D-B6DF-691BDA6B2DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8592BB4B-DB60-454D-B6DF-691BDA6B2DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8592BB4B-DB60-454D-B6DF-691BDA6B2DA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC09D613-C9B1-4EA3-B4DE-4E730E386710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC09D613-C9B1-4EA3-B4DE-4E730E386710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC09D613-C9B1-4EA3-B4DE-4E730E386710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC09D613-C9B1-4EA3-B4DE-4E730E386710}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
