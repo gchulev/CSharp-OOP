@@ -6,22 +6,10 @@ namespace Vehicles
 {
     public class Car : Vehicle
     {
-        private double _fuelQuantity;
         private double _fuelConsumption;
-        public Car(double fuelQuantity, double fuelConsumption) : base(fuelQuantity, fuelConsumption)
+        public Car(double fuelQuantity, double fuelConsumption, int tankCapacity) : base(fuelQuantity, fuelConsumption, tankCapacity)
         {
 
-        }
-        public override double FuelQuantity
-        {
-            get
-            {
-                return this._fuelQuantity;
-            }
-            protected set
-            {
-                this._fuelQuantity = value;
-            }
         }
         public override double FuelConsumption
         {

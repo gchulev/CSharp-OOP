@@ -7,9 +7,9 @@ namespace Vehicles
     public abstract class Vehicle
     {
         private double _fuelQuantity;
-        private double _fuelConsumption;
-        public Vehicle(double fuelQantity, double fuelConsumption)
+        public Vehicle(double fuelQantity, double fuelConsumption, int tankCapacity)
         {
+            this.TankCapacity = tankCapacity;
             this.FuelQuantity = fuelQantity;
             this.FuelConsumption = fuelConsumption;
         }
@@ -22,25 +22,37 @@ namespace Vehicles
             }
             protected set
             {
-                this._fuelQuantity = value;
+                if (value > this.TankCapacity)
+                {
+                    this._fuelQuantity = 0;
+                }
+                else
+                {
+                    this._fuelQuantity = value;
+                }
             }
         }
         public virtual double FuelConsumption { get; protected set; }
-
-        public void Drive(double distance)
+        public int TankCapacity { get; }
+        public string Drive(double distance)
         {
             if (distance * this.FuelConsumption <= this.FuelQuantity)
             {
                 this.FuelQuantity -= distance * this.FuelConsumption;
-                Console.WriteLine($"{this.GetType().Name} travelled {distance} km");
+                return $"{this.GetType().Name} travelled {distance} km";
             }
-            else
-            {
-                Console.WriteLine($"{this.GetType().Name} needs refueling");
-            }
+            return $"{this.GetType().Name} needs refueling";
         }
         public virtual void Refuel(double fuelAmmount)
         {
+            if (fuelAmmount <= 0)
+            {
+                throw new ArgumentException("Fuel must be a positive number");
+            }
+            if (this.FuelQuantity + fuelAmmount > this.TankCapacity)
+            {
+                throw new ArgumentException($"Cannot fit {fuelAmmount} fuel in the tank");
+            }
             this.FuelQuantity += fuelAmmount;
         }
 
