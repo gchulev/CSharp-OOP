@@ -11,7 +11,7 @@ namespace Heroes.Repositories
     {
         private readonly List<IWeapon> _weapons;
 
-        private WeaponRepository()
+        public WeaponRepository()
         {
             this._weapons = new List<IWeapon>();
         }

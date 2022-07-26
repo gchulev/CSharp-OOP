@@ -14,7 +14,7 @@ namespace Heroes.Models.Map
             var knights = new List<IHero>();
             var barbarians = new List<IHero>();
 
-            knights = heroes.Where(h => h.GetType() == typeof(Knight)).ToList();
+            knights = heroes.Where(h => h.GetType().Name == typeof(Knight).Name).ToList();
             barbarians = heroes.Where(h => h.GetType().Name == typeof(Barbarian).Name).ToList();
 
             while (knights.Any(k => k.IsAlive) && barbarians.Any(b => b.IsAlive))
@@ -35,7 +35,7 @@ namespace Heroes.Models.Map
                 {
                     foreach (Knight knight in knights)
                     {
-                        if (barbarian.IsAlive && knight.IsAlive) //TODO: check if we have to check if the knigh is alive if he is being hit. It is not clear from the task.
+                        if (barbarian.IsAlive && knight.IsAlive)
                         {
                             int damageDone = barbarian.Weapon.DoDamage();
                             knight.TakeDamage(damageDone);

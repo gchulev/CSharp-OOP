@@ -7,14 +7,14 @@ namespace Heroes.Models.Heroes
 {
     public abstract class Hero : IHero
     {
-        private readonly string _name;
+        private string _name;
         private int _health;
         private int _armour;
         private IWeapon _weapon;
 
         public Hero(string name, int health, int armour)
         {
-            this._name = name;
+            this.Name = name;
             this.Health = health;
             this.Armour = armour;
         }
@@ -27,6 +27,14 @@ namespace Heroes.Models.Heroes
                     throw new ArgumentException("Hero name cannot be null or empty.");
                 }
                 return this._name;
+            }
+            private set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Hero name cannot be null or empty.");
+                }
+                this._name = value;
             }
         }
 
@@ -71,7 +79,7 @@ namespace Heroes.Models.Heroes
             }
         }
 
-        public bool IsAlive { get => this._health > 0 ? true : false; }
+        public bool IsAlive { get => this._health > 0; }
 
         public void AddWeapon(IWeapon weapon)
         {
@@ -88,7 +96,7 @@ namespace Heroes.Models.Heroes
                 this._armour = 0;
 
                 this._health -= damageToHealthPool;
-                if (this._health < 0)
+                if (this._health <= 0)
                 {
                     this._health = 0;
                 }

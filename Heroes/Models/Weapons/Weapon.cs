@@ -8,11 +8,11 @@ namespace Heroes.Models.Weapons
 {
     public abstract class Weapon : IWeapon
     {
-        private readonly string _name;
+        private string _name;
         private int _durability;
         public Weapon(string name, int durability)
         {
-            this._name = name;
+            this.Name = name;
             this.Durability = durability;
         }
         public string Name
@@ -25,6 +25,14 @@ namespace Heroes.Models.Weapons
                 }
                 return this._name;
             }
+            private set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Weapon type cannot be null or empty.");
+                }
+                this._name = value;
+            }
         }
 
         public int Durability
@@ -33,7 +41,7 @@ namespace Heroes.Models.Weapons
             {
                 return this._durability;
             }
-            set
+            protected set
             {
                 if (value < 0)
                 {
@@ -50,10 +58,10 @@ namespace Heroes.Models.Weapons
             FieldInfo[] constFields = weaponType.GetFields(BindingFlags.NonPublic | BindingFlags.Static);
             int currentWeaponDamage = (int)constFields[0].GetValue(weaponType);
 
-            this.Durability--;
 
             if (this.Durability <= 0)
             {
+                this.Durability--;
                 return 0;
             }
             return currentWeaponDamage;

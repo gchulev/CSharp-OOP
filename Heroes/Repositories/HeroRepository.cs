@@ -11,7 +11,7 @@ namespace Heroes.Repositories
     {
         private readonly List<IHero> _models;
 
-        private HeroRepository() //TODO: Check if this can be modified because the task says otherwise.
+        public HeroRepository()
         {
             this._models = new List<IHero>();
         }
