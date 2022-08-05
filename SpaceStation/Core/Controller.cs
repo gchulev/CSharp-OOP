@@ -18,7 +18,7 @@ namespace SpaceStation.Core
     {
         private readonly AstronautRepository astronautRepo;
         private readonly PlanetRepository planetRepo;
-        private List<IPlanet> exploredPlanets;
+        private readonly List<IPlanet> exploredPlanets;
 
         public Controller()
         {
@@ -29,26 +29,13 @@ namespace SpaceStation.Core
 
         public string AddAstronaut(string type, string astronautName)
         {
-            IAstronaut astronaut = null;
-
-            switch (type)
+            IAstronaut astronaut = type switch
             {
-                case "Biologist":
-                    astronaut = new Biologist(astronautName);
-                    break;
-
-                case "Geodesist":
-                    astronaut = new Geodesist(astronautName);
-                    break;
-
-                case "Meteorologist":
-                    astronaut = new Meteorologist(astronautName);
-                    break;
-
-                default:
-                    throw new InvalidOperationException("Astronaut type doesn't exists!");
-            }
-
+                "Biologist" => new Biologist(astronautName),
+                "Geodesist" => new Geodesist(astronautName),
+                "Meteorologist" => new Meteorologist(astronautName),
+                _ => throw new InvalidOperationException("Astronaut type doesn't exists!"),
+            };
             this.astronautRepo.Add(astronaut);
             return $"Successfully added {astronaut.GetType().Name}: {astronaut.Name}!";
         }

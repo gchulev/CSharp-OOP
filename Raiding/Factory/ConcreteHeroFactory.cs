@@ -10,19 +10,14 @@ namespace Raiding.Factory
     {
         public override IHero CreateHero(string type, string name)
         {
-            switch (type)
+            return type switch
             {
-                case "Druid":
-                    return new Druid(name);
-                case "Paladin":
-                    return new Paladin(name);
-                case "Rogue":
-                    return new Rogue(name);
-                case "Warrior":
-                    return new Warrior(name);
-                default:
-                    throw new InvalidHeroException("Invalid hero!");
-            }
+                "Druid" => new Druid(name),
+                "Paladin" => new Paladin(name),
+                "Rogue" => new Rogue(name),
+                "Warrior" => new Warrior(name),
+                _ => throw new InvalidHeroException("Invalid hero!"),
+            };
         }
     }
 }

@@ -44,8 +44,6 @@ public class HeroRepositoryTests
         // Arrange
         var repository = new HeroRepository();
         var hero = new Hero("test1", 10);
-        var hero1 = new Hero("test2", 20);
-        var hero2 = new Hero("test3", 30);
 
         // Act
         string returnMessage = repository.Create(hero);

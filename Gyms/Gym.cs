@@ -8,7 +8,7 @@
     {
         private string name;
         private int size;
-        private List<Athlete> athletes;
+        private readonly List<Athlete> athletes;
 
         public Gym(string name, int size)
         {
