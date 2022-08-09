@@ -27,7 +27,7 @@ namespace NavalVessels.Core
             IVessel vessel = this.vessels.FindByName(selectedVesselName);
             ICaptain captain = this.captains.FirstOrDefault(c => c.FullName == selectedCaptainName);
 
-            if (captain == null)
+            if (captain is null)
             {
                 return string.Format(OutputMessages.CaptainNotFound, selectedCaptainName);
             }
@@ -79,7 +79,8 @@ namespace NavalVessels.Core
 
         public string CaptainReport(string captainFullName)
         {
-            ICaptain captain = this.captains.FirstOrDefault(x => x.FullName == captainFullName);
+            //ICaptain cap = this.captains.FirstOrDefault(x => x.FullName == captainFullName);
+            ICaptain captain = this.captains.Where(c => c.Vessels.Count > 0).FirstOrDefault(c => c.FullName == captainFullName);
             return captain.Report();
         }
 
@@ -101,22 +102,23 @@ namespace NavalVessels.Core
                 return string.Format(OutputMessages.VesselIsAlreadyManufactured, vesselType, name);
             }
 
+            IVessel vessel;
+
             if (vesselType == "Submarine")
             {
-                var submarine = new Submarine(name, mainWeaponCaliber, speed);
-                this.vessels.Add(submarine);
-                return string.Format(OutputMessages.SuccessfullyCreateVessel, vesselType, name, mainWeaponCaliber, speed);
+                vessel = new Submarine(name, mainWeaponCaliber, speed);
             }
             else if (vesselType == "Battleship")
             {
-                var battleShip = new Battleship(name, mainWeaponCaliber, speed);
-                this.vessels.Add(battleShip);
-                return string.Format(OutputMessages.SuccessfullyCreateVessel, vesselType, name, mainWeaponCaliber, speed);
+                vessel = new Battleship(name, mainWeaponCaliber, speed);
             }
             else
             {
                 return String.Format(OutputMessages.InvalidVesselType, vesselType);
             }
+
+            this.vessels.Add(vessel);
+            return string.Format(OutputMessages.SuccessfullyCreateVessel, vesselType, name, mainWeaponCaliber, speed);
         }
 
         public string ServiceVessel(string vesselName)

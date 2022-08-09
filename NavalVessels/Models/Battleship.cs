@@ -56,7 +56,7 @@ namespace NavalVessels.Models
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine(base.ToString());
-            sb.AppendLine($"*Sonar mode: {(this.SonarMode == true ? "ON" : "OFF")}");
+            sb.AppendLine($" *Sonar mode: {(this.SonarMode == true ? "ON" : "OFF")}");
             return sb.ToString().TrimEnd();
         }
     }

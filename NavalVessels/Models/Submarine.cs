@@ -45,7 +45,7 @@ namespace NavalVessels.Models
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine(base.ToString());
-            sb.AppendLine($"*Submerge mode: {(this.SubmergeMode == true ? "ON" : "OFF")}");
+            sb.AppendLine($" *Submerge mode: {(this.SubmergeMode == true ? "ON" : "OFF")}");
 
             return sb.ToString().TrimEnd();
         }
