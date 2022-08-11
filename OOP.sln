@@ -107,6 +107,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankSafe", "BankSafe\BankSa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankSafe.Tests", "BankSafe.Tests\BankSafe.Tests.csproj", "{51FA3BB2-89DF-4EEB-8804-337A95614EF6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasterRaces", "EasterRaces\EasterRaces.csproj", "{15EF6062-97B6-4BD5-AFA3-D09E14F6D469}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -426,6 +428,12 @@ Global
 		{51FA3BB2-89DF-4EEB-8804-337A95614EF6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{51FA3BB2-89DF-4EEB-8804-337A95614EF6}.Test|Any CPU.ActiveCfg = Debug|Any CPU
 		{51FA3BB2-89DF-4EEB-8804-337A95614EF6}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{15EF6062-97B6-4BD5-AFA3-D09E14F6D469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15EF6062-97B6-4BD5-AFA3-D09E14F6D469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15EF6062-97B6-4BD5-AFA3-D09E14F6D469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15EF6062-97B6-4BD5-AFA3-D09E14F6D469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15EF6062-97B6-4BD5-AFA3-D09E14F6D469}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{15EF6062-97B6-4BD5-AFA3-D09E14F6D469}.Test|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
